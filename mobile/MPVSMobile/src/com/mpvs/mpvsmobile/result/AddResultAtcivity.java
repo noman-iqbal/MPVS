@@ -31,21 +31,27 @@ public class AddResultAtcivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.result_page);
-		
+
 		layoutView = (LinearLayout) findViewById(R.id.result_content);
 		rdb = new ResultsDb(this);
 		b = getIntent().getExtras();
 		studentId = b.getString("studentId");
-		getActionBar().setTitle(b.getString("studentName"));
+		// getActionBar().setTitle(b.getString("studentName"));
 		status = b.getString("status");
+		if (status == null) {
+			status = "draft";
+		}
 		ExamContentDb ec = new ExamContentDb(this);
 		if (status.contains("draft")) {
 			Cursor c = ec.getContent(b.getString("examId"));
 
 			while (c.moveToNext()) {
-				String lable = c.getString(c.getColumnIndex(ExamContentDb.EXAM_C_NAME));
-				String max = c.getString(c.getColumnIndex(ExamContentDb.EXAM_C_PERCENTAGE));
-				String id = c.getString(c.getColumnIndex(ExamContentDb.EXAM_C_ID));
+				String lable = c.getString(c
+						.getColumnIndex(ExamContentDb.EXAM_C_NAME));
+				String max = c.getString(c
+						.getColumnIndex(ExamContentDb.EXAM_C_PERCENTAGE));
+				String id = c.getString(c
+						.getColumnIndex(ExamContentDb.EXAM_C_ID));
 				View vie = getResultFeild(lable, max, "", id);
 
 				layoutView.addView(vie);
@@ -54,18 +60,23 @@ public class AddResultAtcivity extends Activity {
 		} else if (status.contains("update")) {
 			Cursor c = rdb.getBy(studentId, b.getString("examId"));
 			while (c.moveToNext()) {
-				String contentId = c.getString(c.getColumnIndex(ResultsDb.CONTENT_ID));
+				String contentId = c.getString(c
+						.getColumnIndex(ResultsDb.CONTENT_ID));
 				String result = c.getString(c.getColumnIndex(ResultsDb.RESULT));
 				ExamContent s = ec.getContentById(contentId);
-				View vie = getResultFeild(s.examCName, s.examCPercentage, result, contentId);
+				View vie = getResultFeild(s.examCName, s.examCPercentage,
+						result, contentId);
 				layoutView.addView(vie);
 			}
 		}
 
 	}
 
-	public View getResultFeild(String lable, String max, String defVal, String cId) {
-		View v = LayoutInflater.from(this).inflate(R.layout.result_conent_row, null);
+
+	public View getResultFeild(String lable, String max, String defVal,
+			String cId) {
+		View v = LayoutInflater.from(this).inflate(R.layout.result_conent_row,
+				null);
 		TextView l = (TextView) v.findViewById(R.id.c_name);
 		EditText e = (EditText) v.findViewById(R.id.result_content);
 		l.setText(lable);
@@ -79,17 +90,20 @@ public class AddResultAtcivity extends Activity {
 	}
 
 	public void onSave(View v) {
-	
 
 		StudentsDB sdb = new StudentsDB(this);
 		Cursor student = sdb.getStudent(b.getString("examId"), studentId);
 		student.moveToNext();
 		Student s = new Student();
-		s.examId = student.getString(student.getColumnIndex(StudentsDB.EXAM_ID));
+		s.examId = student
+				.getString(student.getColumnIndex(StudentsDB.EXAM_ID));
 		s.status = student.getString(student.getColumnIndex(StudentsDB.STATUS));
-		s.studentId = student.getString(student.getColumnIndex(StudentsDB.STUDENT_ID));
-		s.studentName = student.getString(student.getColumnIndex(StudentsDB.STUDENT_NAME));
-		s.studentUserName = student.getString(student.getColumnIndex(StudentsDB.STUDENT_USERNAME));
+		s.studentId = student.getString(student
+				.getColumnIndex(StudentsDB.STUDENT_ID));
+		s.studentName = student.getString(student
+				.getColumnIndex(StudentsDB.STUDENT_NAME));
+		s.studentUserName = student.getString(student
+				.getColumnIndex(StudentsDB.STUDENT_USERNAME));
 		s.status = "update";
 		sdb.updateStudent(s);
 

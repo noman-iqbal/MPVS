@@ -33,7 +33,6 @@ public class ExamContentDb extends MPVS_DB {
 	public Cursor getContent(String examId) {
 		SQLiteDatabase database = this.getReadableDatabase();
 		Cursor c = database.query(TABEL_NAME, new String[] { "_id", EXAM_ID, EXAM_C_ID, EXAM_C_NAME, EXAM_C_PERCENTAGE }, EXAM_ID + "=?", new String[] { examId }, null, null, null);
-		database.close();
 		return c;
 	}
 

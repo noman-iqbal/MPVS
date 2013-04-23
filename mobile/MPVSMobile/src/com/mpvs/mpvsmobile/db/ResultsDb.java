@@ -35,7 +35,6 @@ public class ResultsDb extends MPVS_DB {
 	public Cursor getBy(String stId, String examId) {
 		SQLiteDatabase database = getReadableDatabase();
 		Cursor c = database.query(TABLE_NAME, new String[] { CONTENT_ID, RESULT }, STUDENT_ID + "=? and " + EXAM_ID + "=?", new String[] { stId, examId }, null, null, null);
-	
 		return c;
 	}
 

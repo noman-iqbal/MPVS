@@ -16,7 +16,7 @@ public class BaseActivity extends SlidingFragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getActionBar().setTitle("Exams");
+//		getActionBar().setTitle("Exams");
 		setBehindContentView(R.layout.menu_frame);
 		setContentView(R.layout.content_frame);
 		SlidingMenu sm = getSlidingMenu();

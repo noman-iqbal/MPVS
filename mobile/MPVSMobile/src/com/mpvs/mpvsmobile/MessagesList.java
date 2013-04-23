@@ -14,7 +14,7 @@ public class MessagesList extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.list);
-		getActionBar().setTitle("Messages");
+//		getActionBar().setTitle("Messages");
 
 		MessagesDb ms = new MessagesDb(this);
 		String[] columns = new String[] { MessagesDb.FROM_NAME, MessagesDb.SUBJECT, MessagesDb.MESSAGE ,MessagesDb.DATE};
