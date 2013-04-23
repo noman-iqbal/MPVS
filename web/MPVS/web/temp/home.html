@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="sidebar_default  no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>M P V S</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Vincent Valentino, Charlie Sanborn">
+<link rel="shortcut icon" href="css/images/favicon.png">
+<!-- Le styles -->
+<link href="css/twitter/bootstrap.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/twitter/responsive.css" rel="stylesheet">
+<link href="css/jquery-ui-1.8.23.custom.css" rel="stylesheet">
+<script src="js/plugins/modernizr.custom.32549.js"></script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+<div id="loading"><img src="img/ajax-loader.gif"></div>
+<div id="responsive_part">
+  <div class="logo"> <a href="index.html"><span><img src="img/toplogo.png" width="200" height="65"></span></a> </div>
+  <ul class="nav responsive">
+    <li>
+      <button class="btn responsive_menu icon_item" data-toggle="collapse" data-target=".overview"> <i class="icon-reorder"></i> </button>
+    </li>
+  </ul>
+</div>
+<!-- Responsive part -->
+
+<div id="sidebar" class="color_0">
+  <div class="scrollbar">
+    <div class="track">
+      <div class="thumb">
+        <div class="end"></div>
+      </div>
+    </div>
+  </div>
+  <div class="viewport ">
+    <div class="overview collapse">
+      <ul id="sidebar_menu" class="navbar nav nav-list container full">
+        <li class="color_4"> <a class="dashboard" href="index.html"><img src="img/menu_icons/dashboard.png"><span>DASHBOARD</span></a> </li>
+        <li class="color_3"> <a class="widgets" href="calendar2.html"> <img src="img/menu_icons/calendar.png"><span>USERS</span></a> </li>
+        <li class="active color_3"> <a class="widgets"data-parent="#sidebar_menu" href="maps.html"> <img src="img/menu_icons/maps.png"><span>NUTRITION</span></a> </li>
+        <li class="color_3"> <a class="widgets"data-parent="#sidebar_menu" href="grid.html"> <img src="img/menu_icons/grid.png"><span>FITNESS</span></a> </li>
+        <li class="color_3"> <a class="widgets"data-parent="#sidebar_menu" href="media.html"> <img src="img/menu_icons/gallery.png"><span>GENETICS</span></a> </li>
+        <li class="color_3"> <a class="widgets"data-parent="#sidebar_menu" href="file_explorer.html"> <img src="img/menu_icons/explorer.png"><span>CHALLENGES</span> <!-- <span class="label  label-info pull-right">new</span> --></a> </li>
+        </ul>
+      
+      <!-- End sidebar_box --> 
+      
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div class="container">
+    <div class="header row-fluid">
+      <div class="logo"> <a href="index.html"><span><img src="img/toplogo.png" width="200" height="65"></span></a> </div>
+      
+      
+      <div class="top_right">
+        <ul class="nav nav_menu">
+          <li class="dropdown"> <a class="dropdown-toggle administrator" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+            <div class="title"><span class="name">Brad Lally</span><span class="subtitle">MD Revolution Member</span></div>
+            <span class="icon"><img src="img/brad_thm.jpg"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li><a href="profile.html"><i class=" icon-user"></i> My Profile</a></li>
+              <li><a href="forms_general.html"><i class=" icon-cog"></i>Settings</a></li>
+              <li><a href="index2.html"><i class=" icon-unlock"></i>Log Out</a></li>
+              <li><a href="search.html"><i class=" icon-flag"></i>Help</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End top-right --> 
+    </div>
+<div id="main_container">
+
+</div>
+  <div id="footer">
+    <p> &copy; MD Revolution, 2012. All Rights Reserved </p>
+    <span class="company_logo"><a href="http://www.mdrevolution.com"></a></span> </div>
+</div>
+
+</div>
+<!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- General scripts --> 
+<script src="js/jquery.js" type="text/javascript"> </script> 
+<!--[if !IE]> -->
+<!--[if !IE]> -->
+<script src="js/plugins/enquire.min.js" type="text/javascript"></script> 
+<!-- <![endif]-->
+<!-- <![endif]-->
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.sparkline.min.js"></script> 
+<script src="js/plugins/excanvas.compiled.js"></script>
+<script src="js/bootstrap-transition.js" type="text/javascript"></script> 
+<script src="js/bootstrap-alert.js" type="text/javascript"></script> 
+<script src="js/bootstrap-modal.js" type="text/javascript"></script> 
+<script src="js/bootstrap-dropdown.js" type="text/javascript"></script> 
+<script src="js/bootstrap-scrollspy.js" type="text/javascript"></script> 
+<script src="js/bootstrap-tab.js" type="text/javascript"></script> 
+<script src="js/bootstrap-tooltip.js" type="text/javascript"></script> 
+<script src="js/bootstrap-popover.js" type="text/javascript"></script> 
+<script src="js/bootstrap-button.js" type="text/javascript"></script> 
+<script src="js/bootstrap-collapse.js" type="text/javascript"></script> 
+<script src="js/bootstrap-carousel.js" type="text/javascript"></script> 
+<script src="js/bootstrap-typeahead.js" type="text/javascript"></script> 
+<script src="js/bootstrap-affix.js" type="text/javascript"></script> 
+<script src="js/fileinput.jquery.js" type="text/javascript"></script> 
+<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script> 
+<script src="js/jquery.touchdown.js" type="text/javascript"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.tinyscrollbar.min.js"></script> 
+<script language="javascript" type="text/javascript" src="js/jnavigate.jquery.min.js"></script> 
+<script language="javascript" type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.peity.min.js"></script> 
+
+<!-- Flot charts --> 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.resize.js"></script> 
+
+<!-- Data tables --> 
+<script type="text/javascript" language="javascript" src="js/plugins/datatables/js/jquery.dataTables.js"></script> 
+
+<!-- Task plugin --> 
+<script language="javascript" type="text/javascript" src="js/plugins/knockout-2.0.0.js"></script> 
+
+<!-- Custom made scripts for this template --> 
+<script src="js/scripts.js" type="text/javascript"></script> 
+<script type="text/javascript">
+  /**** Specific JS for this page ****/
+/* Todo Plugin */
+var todo_data = [
+{id: 1, title: "<i class='gicon-gift icon-white'><\/i>Have tea with the Queen", isDone: false},
+{id: 2, title: "<i class='gicon-briefcase icon-white'><\/i>Steal  James Bond car", isDone: true},
+{id: 3, title: "<i class='gicon-heart icon-white'><\/i>Confirm that this template is awesome", isDone: false},
+{id: 4, title: "<i class='gicon-thumbs-up icon-white'><\/i>Nothing", isDone: false},  
+{id: 5, title: "<i class='gicon-fire icon-white'><\/i>Play solitaire", isDone: false}         
+];
+
+
+function Task(data) {
+  this.title = ko.observable(data.title);
+  this.isDone = ko.observable(data.isDone);
+  this.isEditing = ko.observable(data.isEditing);
+
+  this.startEdit = function (event) {
+      console.log("editing");
+      this.isEditing(true);
+  }
+
+  this.updateTask = function (task) {
+      this.isEditing(false);
+  }
+}
+
+function TaskListViewModel() {
+          // Data
+          var self = this;
+          self.tasks = ko.observableArray([]);
+          self.newTaskText = ko.observable();
+          self.incompleteTasks = ko.computed(function() {
+              return ko.utils.arrayFilter(self.tasks(), 
+                function(task) { 
+                  return !task.isDone() && !task._destroy;
+              });
+          });
+
+          self.completeTasks = ko.computed(function(){
+              return ko.utils.arrayFilter(self.tasks(), 
+                function(task) { 
+                  return task.isDone() && !task._destroy;
+              });
+          });
+
+          // Operations
+          self.addTask = function() {
+              self.tasks.push(new Task({ title: this.newTaskText(), isEditing: false }));
+
+              self.newTaskText("");
+
+          };
+          self.removeTask = function(task) { self.tasks.destroy(task) };
+
+          self.removeCompleted = function(){
+              self.tasks.destroyAll(self.completeTasks());
+          };
+
+          /* Load the data */
+          var mappedTasks = $.map(todo_data, function(item){
+              return new Task(item);
+          });
+
+          self.tasks(mappedTasks);      
+      }
+
+      ko.applyBindings(new TaskListViewModel());  
+      //End Todo Plugin
+
+      </script>
+      <script type="text/javascript">
+
+      //Chart - Campaigns
+      $(function () {
+        var data_campaigns = [
+          [1,6825], 
+          [2,5472], 
+          [3,10453], 
+          [4,5299], 
+          [5,3944], 
+          [6,12118], 
+          [7,2024], 
+          [8,6817],
+          [9,5351],
+          [10,6273],
+          [11,4526],
+          [12,5542],
+          [13,226],
+          [14,1534],
+          [15,13],
+          [16,4718],
+          [17,5679],
+          [18,14827]];
+
+        var data_dates = [
+        "2/15/2012", 
+        "2/16/2012",
+        "2/17/2012", 
+        "2/18/2012", 
+        "2/19/2012", 
+        "2/20/2012", 
+        "2/21/2012", 
+        "2/22/2012", 
+        "2/23/2012", 
+        "2/24/2012", 
+        "2/25/2012", 
+        "2/26/2012", 
+        "2/27/2012", 
+        "2/28/2012", 
+        "2/29/2012", 
+        "3/1/2012", 
+        "3/2/2012",  
+        "3/3/2012" 
+        ]
+
+        var plot = $.plot($("#placeholder"),
+            [ { 
+                data: data_campaigns, 
+                color:"rgba(0,0,0,0.2)", 
+                shadowSize:0,  
+                bars: {
+                  show: true,
+                  lineWidth: 0,
+                  fill: true,
+                  fillColor: { 
+                    colors: [ { opacity: 1 }, { opacity: 1 } ] 
+                  },
+                }
+              } 
+          ],     
+          {
+            series: { bars: { show:true,  barWidth: 0.6 } },
+            grid: { show:false, hoverable: true, clickable: false, autoHighlight: true, borderWidth:0,   },
+            yaxis: { min: 0, max: 15000 },
+          });
+       
+        function showTooltip(x, y, contents) {
+            var index = parseInt(contents) - 1;
+            var steps = data_campaigns[index][1];
+
+            $('<div id="tooltip"><div class="date">' + data_dates[index] + 
+              '<\/div><div class="title text_color_3">' + steps + 
+              '<\/div> <div class="description text_color_3">STEPS<\/div><div class="title ">'+steps/100 +'%<\/div><div class="description">of Goal (10000)<\/div><\/div>').css( {
+                position: 'absolute',
+                display: 'none',
+                top: y - 125,
+                left: x - 40,
+                border: '0px solid #ccc',
+                padding: '2px 6px',
+                'background-color': '#fff',
+                opacity: 10
+            }).appendTo("body").fadeIn(200);
+        }
+
+        var previousPoint = null;
+        $("#placeholder").bind("plothover", function (event, pos, item) {
+            $("#x").text(pos.x.toFixed(2));
+            $("#y").text(pos.y.toFixed(2));
+            if (item) {
+                if (previousPoint != item.dataIndex) {
+                  previousPoint = item.dataIndex;
+                  $("#tooltip").remove();
+                  var x = item.datapoint[0].toFixed(2),
+                  y = item.datapoint[1].toFixed(2);
+                  showTooltip(item.pageX, item.pageY,
+                    x);
+              }
+          }
+      });
+
+         //Fundraisers chart
+         var data_fund = [[1,10], [2,9], [3,8], [4,6], [5,5], [6,3], [7,9], [8,10],[9,12],[10,14],[11,15],[12,13],[13,11],[14,10],[15,9],[16,8],[17,12],[18,14],[19,16],[20,19],[21,20],[22,20],[23,19],[24,17],[25,15],[25,14],[26,12],[27,10],[28,8],[29,10],[30,12],[31,10], [32,9], [33,8], [34,6], [35,5], [36,3], ];
+         $.plot($("#placeholder2"),
+           [ { data: data_fund, color:"#fff", shadowSize:0, 
+           bars: {
+              show: true,
+              lineWidth: 0,
+              fill: true,
+              highlight: {
+                opacity: 0.3
+            },
+            fillColor: { colors: [ { opacity: 1 }, { opacity: 1 } ] },
+        },
+    } 
+    ],     
+    {
+       series: {
+         bars: {show:true, barWidth: 0.6}
+     },
+     grid: { show:false, hoverable: true, clickable: false, autoHighlight: true, borderWidth:0,   },
+     yaxis: { min: 0, max: 23 },
+
+ });
+
+         function showTooltip2(x, y, contents) {
+          $('<div id="tooltip"><div class="title ">'+x*2+'</div><div class="description">Impressions</div></div>').css( {
+            position: 'absolute',
+            display: 'none',
+            top: y - 58,
+            left: x - 40,
+            border: '0px solid #ccc',
+            padding: '2px 6px',
+            'background-color': '#fff',
+            opacity: 10
+        }).appendTo("body").fadeIn(200);
+      }
+
+      var previousPoint = null;
+      $("#placeholder2").bind("plothover", function (event, pos, item) {
+          $("#x").text(pos.x.toFixed(2));
+          $("#y").text(pos.y.toFixed(2));
+          if (item) {
+            if (previousPoint != item.dataIndex) {
+              previousPoint = item.dataIndex;
+              $("#tooltip").remove();
+              var x = item.datapoint[0].toFixed(2),
+              y = item.datapoint[1].toFixed(2);
+              showTooltip2(item.pageX, item.pageY,
+                x);
+          }
+      }
+  });
+    //Envato chart
+    $.plot($("#placeholder3"),
+       [ { data: data_fund, color:"rgba(0,0,0,0.2)", shadowSize:0, 
+       bars: {
+
+          lineWidth: 0,
+          fill: true,
+
+          fillColor: { colors: [ { opacity: 1 }, { opacity: 1 } ] },
+      },
+      lines: {show:false, fill:true}, points: {show:false},
+  } 
+  ],     
+  {
+   series: {
+     bars: {show:true, barWidth: 0.6}
+ },
+ grid: { show:false, hoverable: true, clickable: false, autoHighlight: true, borderWidth:0,   },
+ yaxis: { min: 0, max: 23 },
+
+});
+    //Facebook chart
+    $.plot($("#placeholder4"),
+       [ { data: data_fund, color:"rgba(0,0,0,0.2)", shadowSize:0, 
+       bars: {
+
+          lineWidth: 0,
+          fill: true,
+
+          fillColor: { colors: [ { opacity: 1 }, { opacity: 1 } ] },
+      },
+      lines: {show:false, fill:true}, points: {show:false},
+  } 
+  ],     
+  {
+   series: {
+     bars: {show:true, barWidth: 0.6}
+ },
+ grid: { show:false, hoverable: true, clickable: false, autoHighlight: true, borderWidth:0,   },
+ yaxis: { min: 0, max: 23 },
+
+});
+    // End Fundraiser chart
+});
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Well Come to M.P.V.S</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="css/images/favicon.png">
+        <!-- Le styles -->
+        <link href="css/twitter/bootstrap.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/twitter/responsive.css" rel="stylesheet">
+        <link href="css/jquery-ui-1.8.23.custom.css" rel="stylesheet">
+        <script src="js/plugins/modernizr.custom.32549.js"></script>
+        <script src="js/jquery.js"></script> 
+    </head>
+
+    <body>
+        <div id="login_page"> 
+            <!-- Login page -->
+
+
+            <div id="login">
+                <div id="login_container">
+
+                    <div class="row-fluid fluid">
+                        <div class="span5"> <img src="img/profile_imgs/image_1.png" /> </div>
+                        <div class="span7">
+                            <div class="title"><span class="name">Noman Iqbal</span><span class="subtitle">Active</span></div>
+                            <form id="formID" class="form-search">
+                                <div class="input-append row-fluid">
+                                    <input type="text" class="row-fluid search-query" placeholder="Name" name="userName">
+
+                                </div>
+
+                                <div class="input-append row-fluid">
+                                    <input type="password" class="row-fluid search-query" placeholder="Password" name="pass">
+                                    <a id="loginButton" class="btn color_1"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="loader" style="
+                     margin-left : 0;
+                     margin-right: 0;
+                     text-align: center;
+                     margin-top: 0;
+                     padding-top: 100px;
+                     margin-bottom: 0;
+                     display: none;
+                     ">
+                    <img src="img/ajax-loader.gif">
+                </div>
+            </div>
+            <!-- End #login --> 
+            <!--<img src="img/ajax-loader.gif">-->  
+        </div>
+        <!-- End #loading --> 
+
+        <!-- Le javascript
+            ================================================== --> 
+        <!-- Placed at the end of the document so the pages load faster --> 
+
+        <!-- Flip effect on login screen --> 
+
+        <script type="text/javascript">
+            //            $('#login').fadeOut(3000,function(){
+            //                
+            //                $('#login').html()='<img src="img/ajax-loader.gif" >';
+            //            });
+
+            
+            
+            $("#loginButton").live("click", function(e){
+                //                console.log(e);
+                var arr = $("#formID").serialize();
+                //   console.log('here');
+                $.ajax({
+                    type:'GET',
+                    url:"Login?"+arr,
+                    //                    dataType:"HTML",
+                    beforeSend: function(){
+                        $("#login_container").fadeOut(1000, function(){
+                            $("#loader").fadeIn(1000);
+                        });
+                    },
+                    success: function (data){
+                        
+                        $("#loader").fadeOut(1000, function(){
+                            $("#login_container").fadeIn(1000);
+                            $('#loader').hide();
+                        });
+                        if(data=='true'){
+                            alert("login successfull");
+
+                        }else if( data=='false'){
+                            alert("login failed");
+                        }else if( data=='!user'){
+                            alert("login failed");
+                        }
+                        
+                        console.log(data);
+                    }
+                    
+                    
+                });
+                //                request.start(function(){
+                //                    console.log('here');
+                //                });
+                //                request.done(function(data){
+                //                    console.log(data);
+                //                });
+                
+            });
+
+        </script>
+
+    </body>
+</html>

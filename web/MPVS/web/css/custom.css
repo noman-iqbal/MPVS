@@ -1,0 +1,61 @@
+.recentable td .time {
+	color:rgba(255, 255, 255, 0.6);
+	font-size:12px;
+	float:right;
+	margin-right:10px;
+}
+.row-fluid .span13 {
+width:20.0%;
+*width:20.93056%
+}
+.row-fluid:not(.fluid) .span13 {
+width:20.0%;
+*width:20.93056%
+}
+.row-fluid .span14 {
+	width:25%;
+}
+.row-fluid:not(.fluid) .span14 {
+	width:25%;
+}
+.heading4 {
+	font-size:22px;
+	text-align:center;
+}
+.step-val {
+	font-size:0.5em;
+	line-height:25px;
+}
+.leaders h2 {
+	margin-top:5px;
+}
+.width70 {
+	width:70%;
+}
+.currentc {
+	margin:0 auto;
+	text-align:center;
+	padding:10px 0 0;
+}
+.currentc h4 {
+	font-size:2em;
+	clear:both;
+}
+.currentc object {
+	width:30%;
+}
+.padt35 {
+	padding-top:35px;
+}
+.padl0 {
+	padding-left:0 !important;
+}
+.red_bg {
+	background-color:#EC2426 !important;
+}
+.tal {
+	text-align:left;
+}
+.tac {
+	text-align:center;
+}

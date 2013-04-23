@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="MPVSPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.mpvs.db.Books</class>
+    <class>com.mpvs.db.Users</class>
+    <class>com.mpvs.db.Categories</class>
+    <class>com.mpvs.db.Reports</class>
+    <class>com.mpvs.db.RequestsTo</class>
+    <class>com.mpvs.db.Requests</class>
+    <class>com.mpvs.db.ExamContentName</class>
+    <class>com.mpvs.db.UsersSemester</class>
+    <class>com.mpvs.db.ExamContents</class>
+    <class>com.mpvs.db.UsersSubject</class>
+    <class>com.mpvs.db.Exams</class>
+    <class>com.mpvs.db.ResultsContent</class>
+    <class>com.mpvs.db.Subjects</class>
+    <class>com.mpvs.db.Results</class>
+    <class>com.mpvs.db.Semesters</class>
+    <class>com.mpvs.db.ExamSubject</class>
+    <class>com.mpvs.db.ExamMember</class>
+    <class>com.mpvs.db.ResultMember</class>
+    <class>com.mpvs.db.Programs</class>
+    <class>com.mpvs.db.ResultsStudent</class>
+    <class>com.mpvs.db.TimeSlots</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bob?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html class="sidebar_default  no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>RevUp - Health, Accelerated</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Vincent Valentino, Charlie Sanborn">
+<link rel="shortcut icon" href="css/images/favicon.png">
+<!-- Le styles -->
+<link href="css/twitter/bootstrap.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/twitter/responsive.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/jquery-ui-1.8.23.custom.css" rel="stylesheet">
+<script src="js/plugins/modernizr.custom.32549.js"></script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+</head>
+
+<body>
+<div id="loading"><img src="img/ajax-loader.gif"></div>
+<div id="responsive_part">
+  <div class="logo"> <a href="index.html"><span><img src="img/toplogo.png" width="200" height="65"></span></a> </div>
+  <ul class="nav responsive">
+    <li>
+      <button class="btn responsive_menu icon_item" data-toggle="collapse" data-target=".overview"> <i class="icon-reorder"></i> </button>
+    </li>
+  </ul>
+</div>
+<!-- Responsive part -->
+
+<div id="sidebar" class="color_0">
+  <div class="scrollbar">
+    <div class="track">
+      <div class="thumb">
+        <div class="end"></div>
+      </div>
+    </div>
+  </div>
+  <div class="viewport ">
+    <div class="overview collapse">
+      <ul id="sidebar_menu" class="navbar nav nav-list container full">
+        <li class="active color_4"> <a class="dashboard" href="index.html"><img src="img/menu_icons/dashboard.png"><span>DASHBOARD</span></a> </li>
+        <li class="color_3"> <a class="widgets" href="calendar2.html"> <img src="img/menu_icons/calendar.png"><span>HEALTH</span></a> </li>
+        <li class="color_3"> <a class="widgets"data-parent="#sidebar_menu" href="maps.html"> <img src="img/menu_icons/maps.png"><span>NUTRITION</span></a> </li>
+        <li class="color_3"> <a class="widgets"data-parent="#sidebar_menu" href="grid.html"> <img src="img/menu_icons/grid.png"><span>FITNESS</span></a> </li>
+        <li class="color_3"> <a class="widgets"data-parent="#sidebar_menu" href="media.html"> <img src="img/menu_icons/gallery.png"><span>GENETICS</span></a> </li>
+        <li class="color_3"> <a class="widgets"data-parent="#sidebar_menu" href="file_explorer.html"> <img src="img/menu_icons/explorer.png"><span>CHALLENGES</span> <!-- <span class="label  label-info pull-right">new</span> --></a> </li>
+        </ul>
+      
+      <!-- End sidebar_box --> 
+      
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div class="container">
+    <div class="header row-fluid">
+      <div class="logo"> <a href="index.html"><span><img src="img/toplogo.png" width="200" height="65"></span></a> </div>
+      <div class="top_right">
+        <ul class="nav nav_menu">
+          <li class="dropdown"> <a class="dropdown-toggle administrator" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+            <div class="title"><span class="name">Brad Lally</span><span class="subtitle">MD Revolution Member</span></div>
+            <span class="icon"><img src="img/brad_thm.jpg"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li><a href="profile.html"><i class=" icon-user"></i> My Profile</a></li>
+              <li><a href="forms_general.html"><i class=" icon-cog"></i>Settings</a></li>
+              <li><a href="index2.html"><i class=" icon-unlock"></i>Log Out</a></li>
+              <li><a href="search.html"><i class=" icon-flag"></i>Help</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End top-right --> 
+    </div>
+    <div id="main_container">
+      <div class="row-fluid fluid">
+      
+        <div class="span9">
+         <div class="box color_4">
+            <div class="title">
+              <h4> <span>Current Challenge</span> </h4>
+            </div>
+            <!-- End .title -->
+            <div class="content full row-fluid">
+              <div class="width70 currentc">
+              <object data="img/icons/mountains.svg" type="image/svg+xml"></object> 
+              <h4>Walk up Mt. Kilimanjaro</h4>
+                <div class="progress progress-info progress-striped active">
+                  <div style="width: 60%;" class="bar"><span style="display: none;"> </span><canvas width="50" height="17"></canvas></div></div>
+                  	<div class="label-info mb15" style="padding:0 0 0 10px;">You're doing great! Halfway there!</div>
+                    <div class="mb15" style="padding:0 40px 0;">At your current rate you will have completed all challenges in 67 davs.YOUR GOAL IS 60 DAYS.</div>
+              </div>
+            </div>
+            <!-- End .content -->
+            <div class="description tac">
+              <div class="btn-group">
+                <a href="#" class="btn">Walk OFF.. </a>
+                <a href="#" class="btn">Power A.. </a>
+                <a href="#" class="btn">Burn OFF.. </a>
+                <a href="#" class="btn">Climb MT.. </a></div>
+            </div>
+            
+            <!-- End .description -->
+          </div>
+          
+          <!-- End .box --> 
+          
+        </div>
+          <!-- End .box .span9-->
+          
+          <div class="span3">
+          		<div class="box ">
+            <div class="title">
+              <h4> <span>My Friends</span> </h4>
+            </div>
+            <!-- End .title -->
+            <div class="content full row-fluid">
+              <table id="datatable_example" class="responsive table table-hover full recentable">
+                <tbody>
+                  <tr>
+                    <td> <a class="avatar" href="#"><img src="img/message_avatar2.png"></a> </td>
+                    <td> Jhon C. climbed the empire state building</td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a class="avatar" href="#"><img src="img/message_avatar2.png"></a> </td>
+                    <td>Jhon C. climbed the empire state building</td>
+                   
+                  </tr>
+                  <tr>
+                    <td> <a class="avatar" href="#"><img src="img/message_avatar2.png"></a> </td>
+                    <td> Jhon C. climbed the empire state building</td>
+                   
+                  </tr>
+                  <tr>
+                    <td> <a class="avatar" href="#"><img src="img/message_avatar2.png"></a> </td>
+                    <td> Jhon C. climbed the empire state building</td>
+                  </tr>
+                  <tr>
+                    <td> <a class="avatar" href="#"><img src="img/message_avatar2.png"></a> </td>
+                    <td> Jhon C. climbed the empire state building</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- End .content -->
+            
+          </div>
+          </div>
+          <!-- End .span3-->
+      </div>
+      <!-- End .row-fluid  .fluid-->
+
+	<div class="row-fluid fluid">
+      
+        <div class="span12 box color_3">
+        <div class="title">
+              <h4> <span>Rewards</span> </h4>
+            </div>
+            <!-- End .title -->
+         <div class="span13">
+            <div class="content full row-fluid">
+              <div class="width70 currentc">
+              <object data="img/icons/mountains.svg" type="image/svg+xml"></object> 
+              <h4>Rewards</h4>
+              </div>
+            </div>
+            <!-- End .content -->
+            
+          </div>
+          
+          <!-- End .box --> 
+          
+       
+          
+         
+         
+         <div class="span13">
+            <div class="content full row-fluid">
+              <div class="width70 currentc">
+              <object data="img/icons/mountains.svg" type="image/svg+xml"></object> 
+              <h4>Rewards</h4>
+              </div>
+            </div>
+            <!-- End .content -->
+            
+          </div>
+          
+          <!-- End .box --> 
+          
+        
+          
+          
+         
+         <div class="span13">
+            <div class="content full row-fluid">
+              <div class="width70 currentc">
+              <object data="img/icons/mountains.svg" type="image/svg+xml"></object> 
+              <h4>Rewards</h4>
+              </div>
+            </div>
+            <!-- End .content -->
+            
+          </div>
+          
+          <!-- End .box --> 
+        
+         
+         <div class="span13">
+            <div class="content full row-fluid">
+              <div class="width70 currentc">
+              <object data="img/icons/mountains.svg" type="image/svg+xml"></object> 
+              <h4>Rewards</h4>
+              </div>
+            </div>
+            <!-- End .content -->
+            
+          </div>
+          
+          <!-- End .box .span13--> 
+          
+        
+          
+        
+         <div class="span13">
+            <div class="content full row-fluid">
+              <div class="width70 currentc">
+              <object data="img/icons/mountains.svg" type="image/svg+xml"></object> 
+              <h4>Rewards</h4>
+              </div>
+            </div>
+            <!-- End .content -->
+            
+          </div>
+          
+          <!-- End .box .span13--> 
+          
+        </div>
+          <!-- End .box .span12-->
+         
+      </div>
+      <!-- End .row-fluid  .fluid-->
+
+		
+    </div>
+    <!-- End #container --> 
+  </div>
+  <div id="footer">
+    <p> &copy; MD Revolution, 2012. All Rights Reserved </p>
+    <span class="company_logo"><a href="http://www.mdrevolution.com"></a></span> </div>
+</div>
+
+</div>
+<!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- General scripts --> 
+<script src="js/jquery.js" type="text/javascript"> </script> 
+<!--[if !IE]> -->
+<!--[if !IE]> -->
+<script src="js/plugins/enquire.min.js" type="text/javascript"></script> 
+<!-- <![endif]-->
+<!-- <![endif]-->
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.sparkline.min.js"></script> 
+<script src="js/plugins/excanvas.compiled.js"></script>
+<script src="js/bootstrap-transition.js" type="text/javascript"></script> 
+<script src="js/bootstrap-alert.js" type="text/javascript"></script> 
+<script src="js/bootstrap-modal.js" type="text/javascript"></script> 
+<script src="js/bootstrap-dropdown.js" type="text/javascript"></script> 
+<script src="js/bootstrap-scrollspy.js" type="text/javascript"></script> 
+<script src="js/bootstrap-tab.js" type="text/javascript"></script> 
+<script src="js/bootstrap-tooltip.js" type="text/javascript"></script> 
+<script src="js/bootstrap-popover.js" type="text/javascript"></script> 
+<script src="js/bootstrap-button.js" type="text/javascript"></script> 
+<script src="js/bootstrap-collapse.js" type="text/javascript"></script> 
+<script src="js/bootstrap-carousel.js" type="text/javascript"></script> 
+<script src="js/bootstrap-typeahead.js" type="text/javascript"></script> 
+<script src="js/bootstrap-affix.js" type="text/javascript"></script> 
+<script src="js/fileinput.jquery.js" type="text/javascript"></script> 
+<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script> 
+<script src="js/jquery.touchdown.js" type="text/javascript"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.tinyscrollbar.min.js"></script> 
+<script language="javascript" type="text/javascript" src="js/jnavigate.jquery.min.js"></script> 
+<script language="javascript" type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.peity.min.js"></script> 
+
+<!-- Flot charts --> 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.crosshair.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.stack.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.pie.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.resize.js"></script> 
+<!-- Jumware plugins for charts http://www.jumware.com/Includes/jquery/Flot/Examples/index.html --> 
+<script language="javascript" type="text/javascript" src="js/plugins/flot/jquery.flot.spider.js"></script> 
+<script language="javascript" type="text/javascript" src="js/plugins/jquery.peity.min.js"></script> 
+<script src="js/plugins/highcharts/highcharts.js"></script> 
+<script src="js/plugins/highcharts/modules/exporting.js"></script> 
+<script src="js/plugins/justGage.1.0.1/resources/js/raphael.2.1.0.min.js"></script> 
+<script src="js/plugins/justGage.1.0.1/resources/js/justgage.1.0.1.min.js"></script> 
+
+<!-- Data tables --> 
+<script type="text/javascript" language="javascript" src="js/plugins/datatables/js/jquery.dataTables.js"></script> 
+
+<!-- Task plugin --> 
+<script language="javascript" type="text/javascript" src="js/plugins/knockout-2.0.0.js"></script> 
+
+<!-- Custom made scripts for this template --> 
+<script src="js/scripts.js" type="text/javascript"></script> 
+
+<script type="text/javascript">
+   $(window).load(function() {
+     $('#loading').fadeOut();
+    });
+    		$(document).ready(function(){
+
+       //Chart - Campaigns
+    
+       var data_campaigns = [
+          [1,6825], 
+          [2,5472], 
+          [3,10453], 
+          [4,5299], 
+          [5,3944], 
+          [6,12118], 
+          [7,2024], 
+          [8,6817],
+          [9,5351],
+          [10,6273],
+          [11,4526],
+          [12,5542],
+          [13,226],
+          [14,1534],
+          [15,13],
+          [16,4718],
+          [17,5679],
+          [18,14827]];
+
+        var data_dates = [
+        "2/15/2012", 
+        "2/16/2012",
+        "2/17/2012", 
+        "2/18/2012", 
+        "2/19/2012", 
+        "2/20/2012", 
+        "2/21/2012", 
+        "2/22/2012", 
+        "2/23/2012", 
+        "2/24/2012", 
+        "2/25/2012", 
+        "2/26/2012", 
+        "2/27/2012", 
+        "2/28/2012", 
+        "2/29/2012", 
+        "3/1/2012", 
+        "3/2/2012",  
+        "3/3/2012" 
+        ]
+
+        var plot = $.plot($("#placeholder"),
+            [ { 
+                data: data_campaigns, 
+                color:"rgba(0,0,0,0.2)", 
+                shadowSize:0,  
+                bars: {
+                  show: true,
+                  lineWidth: 0,
+                  fill: true,
+                  fillColor: { 
+                    colors: [ { opacity: 1 }, { opacity: 1 } ] 
+                  },
+                }
+              } 
+          ],     
+          {
+            series: { bars: { show:true,  barWidth: 0.6 } },
+            grid: { show:false, hoverable: true, clickable: false, autoHighlight: true, borderWidth:0,   },
+            yaxis: { min: 0, max: 15000 },
+          });
+       
+        function showTooltip(x, y, contents) {
+            var index = parseInt(contents) - 1;
+            var steps = data_campaigns[index][1];
+
+            $('<div id="tooltip"><div class="date">' + data_dates[index] + 
+              '<\/div><div class="title text_color_3">' + steps + 
+              '<\/div> <div class="description text_color_3">STEPS<\/div><div class="title ">'+steps/100 +'%<\/div><div class="description">of Goal (10000)<\/div><\/div>').css( {
+                position: 'absolute',
+                display: 'none',
+                top: y - 125,
+                left: x - 40,
+                border: '0px solid #ccc',
+                padding: '2px 6px',
+                'background-color': '#fff',
+                opacity: 10
+            }).appendTo("body").fadeIn(200);
+        }
+
+        var previousPoint = null;
+        $("#placeholder").bind("plothover", function (event, pos, item) {
+            $("#x").text(pos.x.toFixed(2));
+            $("#y").text(pos.y.toFixed(2));
+            if (item) {
+                if (previousPoint != item.dataIndex) {
+                  previousPoint = item.dataIndex;
+                  $("#tooltip").remove();
+                  var x = item.datapoint[0].toFixed(2),
+                  y = item.datapoint[1].toFixed(2);
+                  showTooltip(item.pageX, item.pageY,
+                    x);
+              }
+          }
+      });
+    // Line chart
+    var sin2 = [], cos2 = [];
+    for (var i = 0; i < 14; i += 0.5) {
+        sin2.push([i, Math.sin(i)]);
+        cos2.push([i, Math.cos(i)]);
+    }
+
+});
+    		$(document).ready(function(){
+  var data = [];
+  var series = Math.floor(Math.random()*5)+1;
+  data[0] = { data:60, label:"Increase", color: "#1E2631" };
+  data[1] = {  data:40, label:"Decrease", color: "#52B7D5"};
+  // Pie Chart
+    $.plot($("#donut"), data, 
+  {
+      series: {
+        pie: { 
+          label: {
+            show: true,
+            radius: 1,
+            formatter: function(label, series){
+                return '<div class="chart-label">'+label+'&nbsp;'+Math.round(series.percent)+'%</div>';
+            }
+          },
+          show: true,
+          radius:1,
+          highlight: {
+            opacity: 0.3
+          },
+          legend:{show:false},
+        }
+      }
+    });
+    // Big Bar Chart
+    var sin = [], cos = [], tes = [];
+    for (var i = 0; i < 14; i += 1) {
+        sin.push([i, Math.sin(i)*Math.random()*0.9]);
+        cos.push([i, Math.cos(i)*Math.random()*1.4]);
+          tes.push([i, Math.cos(i)*Math.random()*0.4]);
+    }
+    var plot = $.plot($("#placeholder2"),
+           [  { data: sin,  color:"#ef4723", shadowSize:0 }, { data: cos,  color:"#a1d14d", shadowSize:0},  { data: tes, color:"#4a8cf7", shadowSize:0 } ], {
+               series: {
+                   lines: { show: true, fill:true },
+                   points: { show: true, fill:true },
+               },
+               grid: { hoverable: true, clickable: true, autoHighlight: false, borderWidth:0, color: '#ffffff' },
+               yaxis: { min: -1.5, max: 1.5 },
+             });
+   function showTooltip(x, y, contents) {
+            $('<div id="tooltip"><div class="date">12 Nov 2012<\/div><div class="title text_color_3">'+x/10+'%<\/div> <div class="description text_color_3">CTR<\/div><div class="title ">'+x*12+'<\/div><div class="description">Impressions<\/div><\/div>').css( {
+                position: 'absolute',
+                display: 'none',
+                top: y - 125,
+                left: x - 40,
+                border: '0px solid #ccc',
+                padding: '2px 6px',
+                'background-color': '#fff',
+                opacity: 10
+            }).appendTo("body").fadeIn(200);
+        }
+    var previousPoint = null;
+    $("#placeholder").bind("plothover", function (event, pos, item) {
+        $("#x").text(pos.x.toFixed(2));
+        $("#y").text(pos.y.toFixed(2));
+            if (item) {
+                if (previousPoint != item.dataIndex) {
+                    previousPoint = item.dataIndex;
+                    $("#tooltip").remove();
+                    var x = item.datapoint[0].toFixed(2),
+                        y = item.datapoint[1].toFixed(2);
+                    showTooltip(item.pageX, item.pageY,
+                                item.series.label + " of " + x + " = " + y);
+                }
+        }
+    });
+});
+   // Spider chart
+      var p1,p2,data,options;
+    		$(document).ready(function(){
+          var d1 = [ [0,10], [1,20], [2,80], [3,70], [4,60] ];
+              var d2 = [ [0,30], [1,25], [2,50], [3,60], [4,95] ];
+              var d3 = [ [0,50], [1,40], [2,60], [3,95], [4,30] ];
+              options = { series:
+                                  { spider:
+                                              { active: true
+                           ,highlight: {mode: "area"}
+                           ,legs: { data: [{label: "Scalability"}
+                                            ,{label: "Stability"}
+                                            ,{label: "Accuracy"}
+                                            ,{label: "Flexibility"}
+                                            ,{label: "Quality"}
+                                          ]
+                                          , legScaleMax: 1, legScaleMin:0.8}
+                           ,spiderSize: 0.9 }
+                          }
+                         ,grid:
+                                          { hoverable: true
+                                               ,clickable: true
+                                               ,tickColor: "rgba(0,0,0,0.2)"
+                                               ,mode: "radar"
+                                              }
+                        };
+              data = [ {   data: d1, spider: {show: true, color: "#cb4b4b"} }
+                      ,{    data: d2, spider: {show: true, color: "#a1d14d"} }
+                      ,{     data: d3, spider: {show: true,  color: "#5e96ea"} }
+                     ];
+          p1 = $.plot($("#spider"), data , options);
+      });
+</script> 
+</body>
+</html>
